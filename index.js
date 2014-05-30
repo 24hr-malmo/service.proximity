@@ -37,5 +37,5 @@ Bleacon.startScanning();
 
 Bleacon.on('discover', function(bleacon) { 
     //console.log(bleacon.uuid);
-    pubsock.send("IBEACON " + JSON.stringify(bleacon));
+    pubsock.send(JSON.stringify(bleacon));
 }); 
