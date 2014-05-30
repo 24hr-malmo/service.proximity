@@ -1,0 +1,18 @@
+{
+  "name": "service.proximity",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bleacon": "^0.2.0",
+    "zonar": "^0.5.9",
+    "service.helper": "git+https://github.com/24hr-malmo/service.helper",
+    "zmq": "^2.7.0",
+    "rc": "^0.4.0"
+  }
+}
