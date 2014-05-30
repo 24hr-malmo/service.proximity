@@ -4,16 +4,13 @@ var zmq = require('zmq');
 
 var config = require('rc')('proximity', {
     servicePort: 6060,
-    proximiySensorId: "green"
+    proximitySensorId: "green"
 });
-
-
-console.log(config);
 
 var doc = helper.createDoc({ filename : "README.md"});
 var z = zonar.create({
     net : "24hr",
-    name : "proximity-" + config.proximiySensorId,
+    name : "proximity-" + config.proximitySensorId,
     payload : {
         doc : doc.getPayload(),
         reading : {
